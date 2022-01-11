@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Start Bootstrap</title>
 </head>
 <body>
     <!-- Parte superiore con header e nav -->
-    <header class="container-fluid debug ">
+    <header class="container-fluid fixed-top ">
 
         <!-- Nav della pagina -->
         <div class="container container-md">
@@ -31,8 +32,8 @@
                         <div class="col-3 col-md-6 ">
                             <nav>
                                 <ul class="list-inline text-center list-unstyled  ">
-                                    <li class="list-inline-item ms-lh"><a class="text-decoration-none text-white" href="#">PORTFOLIO</a></li>
-                                    <li class="list-inline-item ms-lh"><a class="text-decoration-none text-white" href="#">ABOUT</a></li>
+                                    <li class="list-inline-item ms-lh"><a class="text-decoration-none text-white" href="#portfolio">PORTFOLIO</a></li>
+                                    <li class="list-inline-item ms-lh"><a class="text-decoration-none text-white" href="#about">ABOUT</a></li>
                                     <li class="list-inline-item ms-lh"><a class="text-decoration-none text-white" href="#">CONTACT</a></li>
                                 </ul>
                             </nav>
@@ -45,52 +46,179 @@
     </header>
 
     <!-- Sezione jumbotron -->
-    <div class="container-fluid ms-color-jumbo">
-        <section class="jumbotron container"></section>
+    <div class="container-fluid  ms-bg-green px-4">
+        <section class="text-center text-white jumbotron container-fluid container-md px-4 ">
+
+            <!-- Titolo jumbotron -->
+            <img src="img/avatar.svg" class="mw-100" alt="">
+            <h2 class="fw-bolder display-2 mt-5">
+                START BOOTSTRAP
+            </h2>
+
+            <!-- Parte con stella tra due righe -->
+            <div class="row d-flex align-items-center gx-2">
+                <div class="col-5 col-md-5 ms-line"></div>
+                
+                <div class="col-2 col-md-2 ">
+
+                    <i class="bi bi-star-fill fs-1"></i>
+
+                </div>
+
+                <div class="col-5 col-md-5 ms-line "></div>
+            </div>
+            
+            <!-- Scritta sotto a stella -->
+            <div class="row mt-3">
+                <div class="col-12">
+                    <p class="fs-5 ">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR </p>
+                </div>
+            </div>
+
+        </section>
     </div>
 
     <!-- Corpo principale della pagina -->
     
+
     <main>
         <!-- Parte del portfolio -->
 
-        <div class="container container-md container-lg">
+        <div id="portfolio" class="container container-md container-lg">
 
             <!-- Titolo della sezione -->
-            <h2 class="text-center">PORTFOLIO</h2>
+            <h2 class="text-center mt-5">PORTFOLIO</h2>
 
             <!-- Immagini portfolio -->
 
             <!-- Riga superiore -->
-            <div class="row row-cols-3 ">
+            <div class="row row-cols-3 mb-5 ">
 
                 <!-- Riga superiore -->
                 <div class="col-12 col-md-6 col-xl-4 my-3">
-                    <img src="img/cabin.png" class="img-fluid" alt="">
+                    <img src="img/cabin.png" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 my-3">
-                    <img src="img/cake.png" class="img-fluid" alt="">
+                    <img src="img/cake.png" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 my-3">
-                    <img src="img/circus.png" class="img-fluid" alt="">
+                    <img src="img/circus.png" class="img-fluid rounded" alt="">
                 </div>   
 
                 
                 <!-- Riga inferiore -->               
                 <div class="col-12 col-md-6 col-xl-4 my-3 ">
-                    <img src="img/game.png" class="img-fluid" alt="">
+                    <img src="img/game.png" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 my-3">
-                    <img src="img/safe.png" class="img-fluid" alt="">
+                    <img src="img/safe.png" class="img-fluid rounded" alt="">
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 my-3">
-                    <img src="img/submarine.png" class="img-fluid" alt="">
+                    <img src="img/submarine.png" class="img-fluid rounded" alt="">
                 </div>
                 
             </div>
             
         </div>
 
+        <!-- Sezione about -->
+
+        <div id="about" class="container-fluid  ms-bg-green pb-5">
+
+            <section class="text-center text-white container-md container-lg">
+
+                <!-- Titolo della sezione -->
+                <h2 class="pt-5">ABOUT</h2>
+
+                <!-- Parte con stella tra due righe -->
+            <div class="row d-flex align-items-center gx-2">
+                <div class="col-5 col-md-5 ms-line"></div>
+                
+                <div class="col-2 col-md-2 ">
+
+                    <i class="bi bi-star-fill fs-1"></i>
+
+                </div>
+
+                <div class="col-5 col-md-5 ms-line "></div>
+            </div>
+
+            <!-- paragrafo descrittivo -->
+            <div class="row">
+                <div class="col-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eaque minus dolore quaerat beatae necessitatibus porro temporibus commodi atque quisquam, facilis molestias et distinctio ex obcaecati vitae, quam itaque delectus!</p>
+                </div>
+                <div class="col-6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum id porro soluta facilis voluptate voluptatum explicabo, reiciendis assumenda, officiis saepe earum autem dolorum recusandae ullam molestiae! Corporis illo ratione id.</p>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary text-white border border-white ms-bg-green"><i class="fas fa-download"></i> Download</button>
+
+            </section>
+
+        </div>
+
+
+        <!-- Sezione contattaci -->
+        <section class="text-center container-md container-lg mt-5">
+            <!-- Titolo della sezione -->
+            <h2>CONTACT ME</h2>
+
+            <!-- Parte con stella tra due righe -->
+            <div class="row d-flex align-items-center gx-2">
+
+                <div class="col-5 col-md-5 ms-line-black"></div>
+            
+                <div class="col-2 col-md-2 ">
+
+                   <i class="bi bi-star-fill fs-1"></i>
+
+                </div>
+
+                <div class="col-5 col-md-5 ms-line-black "></div>
+
+            </div>
+
+            <section class="registration text-start">
+
+                <!-- Form inserisci il tuo nome -->
+                <label for="formFile" class="form-label fw-bold mb-0">Name</label>
+
+                <div class="input-group  mb-3">
+
+                    <input type="text" class="form-control form-control-sm border-top-0 border-end-0 border-start-0" aria-label="Username">  
+                    
+                </div>
+
+                <!-- Form inserisci email -->
+                <label for="formFile" class="form-label fw-bold mb-0">Email Address</label>
+
+                <div class="mb-3">
+                    
+                    <input type="email" class="form-control form-control-sm border-top-0 border-end-0 border-start-0" id="exampleFormControlInput1">
+
+                </div>
+
+                <!-- Form inserisci il tuo numero di telefono -->
+                
+                <label for="formFile" class="form-label fw-bold mb-0">Phone Number</label>
+                <div class="input-group  mb-3">
+
+                    <input type="text" class="form-control form-control-sm border-top-0 border-end-0 border-start-0" aria-label="Username">
+                
+                </div>
+
+                <!-- Inserisci testo libero -->
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label fw-bold">Example textarea</label>
+                    <textarea class="form-control border-top-0 border-end-0 border-start-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <button type="button" class="btn btn-success">Send</button>
+            </section>
+
+        </section>
 
     </main>
 
