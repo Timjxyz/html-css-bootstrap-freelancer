@@ -34,7 +34,7 @@
                                 <ul class="list-inline text-center list-unstyled  ">
                                     <li class="list-inline-item ms-lh"><a class="text-decoration-none text-white" href="#portfolio">PORTFOLIO</a></li>
                                     <li class="list-inline-item ms-lh"><a class="text-decoration-none text-white" href="#about">ABOUT</a></li>
-                                    <li class="list-inline-item ms-lh"><a class="text-decoration-none text-white" href="#">CONTACT</a></li>
+                                    <li class="list-inline-item ms-lh"><a class="text-decoration-none text-white" href="#contact">CONTACT</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -84,10 +84,26 @@
     <main>
         <!-- Parte del portfolio -->
 
-        <div id="portfolio" class="container container-md container-lg">
+        <div id="portfolio" class="container container-md container-lg text-center ">
 
             <!-- Titolo della sezione -->
             <h2 class="text-center mt-5">PORTFOLIO</h2>
+
+             <!-- Parte con stella tra due righe -->
+             <div class="row d-flex align-items-center gx-2">
+
+                <div class="col-5 col-md-5 ms-line-black"></div>
+            
+                <div class="col-2 col-md-2 ">
+
+                   <i class="bi bi-star-fill fs-1"></i>
+
+                </div>
+
+                <div class="col-5 col-md-5 ms-line-black "></div>
+
+            </div>
+            
 
             <!-- Immagini portfolio -->
 
@@ -131,7 +147,7 @@
                 <h2 class="pt-5">ABOUT</h2>
 
                 <!-- Parte con stella tra due righe -->
-            <div class="row d-flex align-items-center gx-2">
+            <div class="row d-flex align-items-center gx-4">
                 <div class="col-5 col-md-5 ms-line"></div>
                 
                 <div class="col-2 col-md-2 ">
@@ -144,11 +160,11 @@
             </div>
 
             <!-- paragrafo descrittivo -->
-            <div class="row">
-                <div class="col-6">
+            <div class="row text-start">
+                <div class="col-12 col-md-6">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eaque minus dolore quaerat beatae necessitatibus porro temporibus commodi atque quisquam, facilis molestias et distinctio ex obcaecati vitae, quam itaque delectus!</p>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum id porro soluta facilis voluptate voluptatum explicabo, reiciendis assumenda, officiis saepe earum autem dolorum recusandae ullam molestiae! Corporis illo ratione id.</p>
                 </div>
             </div>
@@ -161,7 +177,7 @@
 
 
         <!-- Sezione contattaci -->
-        <section class="text-center container-md container-lg mt-5">
+        <section  id="contact" class="text-center container-md container-lg mt-5">
             <!-- Titolo della sezione -->
             <h2>CONTACT ME</h2>
 
@@ -221,6 +237,36 @@
         </section>
 
     </main>
+
+    <!-- Inizio del footer -->
+    <footer class="pt-5 mt-5">
+        <div class="container-fluid d-flex justify-content-around align-items-center text-center text-white">
+
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <p class="h2"> LOCATION</p>
+                    <P>2215 John Daniel Drive Clark, MO 54243</P>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p class="mb-1">AROUND THE WEB</p>
+                    <i class="fab fa-facebook circle"></i>
+                    <i class="fab fa-google-plus-g circle"></i>
+                    <i class="fab fa-twitter circle"></i>
+                    <i class="fab fa-linkedin-in circle"></i>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p>ABOUT FREELANCER</p>
+                    <p>Freelancer is a free to use, open source Bootstrap theme created by <span>Start Bootstrap</span> </p>
+                </div>
+            </div>
+        </div>
+        <!-- Parte riguardante copyright -->
+        <div class="copyright pt-3">
+            <span>Copyright <i class="far fa-copyright"></i>Your website 2019</span>
+        </div>
+
+
+    </footer>
 
 
 
