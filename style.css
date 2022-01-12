@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
-header{
-    height: 70px;
+.ms-bg-black{
     background-color:#2c3e50;
 }
 
+.navbar-dark .navbar-nav .nav-link.active:hover{
+    color: #1abc9c;
+}
+
+
 .jumbotron{
-    margin-top: 70px;
+    margin-top: 56px;
 }
 .ms-bg-green{
     background-color:#1abc9c;
@@ -30,12 +34,6 @@ header{
 .ms-line-black{
     height: 3px;
     background-color:#000;
-}
-
-footer{
-    background-color:#3a546d;
-    
-    
 }
 
 .circle{

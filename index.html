@@ -12,43 +12,36 @@
 </head>
 <body>
     <!-- Parte superiore con header e nav -->
-    <header class="container-fluid fixed-top ">
+    <header>
 
-        <!-- Nav della pagina -->
-        <div class="container container-md">
-
-            <div class="row">
-                <div class="col-12">
-
-                    <div class="row ">
-                        <!-- Parte sinistra del header -->
-                        <div class="col-9 col-md-6">
-                            <div class="logo">
-                                <h1 class="text-white ms-lh">START BOOTSTRAP</h1>
-                            </div>
-                        </div>
-
-                        <!-- Parte nav -->
-                        <div class="col-3 col-md-6 ">
-                            <nav>
-                                <ul class="list-inline text-center list-unstyled  ">
-                                    <li class="list-inline-item ms-lh"><a class="text-decoration-none text-white" href="#portfolio">PORTFOLIO</a></li>
-                                    <li class="list-inline-item ms-lh"><a class="text-decoration-none text-white" href="#about">ABOUT</a></li>
-                                    <li class="list-inline-item ms-lh"><a class="text-decoration-none text-white" href="#contact">CONTACT</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand-md navbar-dark ms-bg-black fixed-top fs-5">
+            <div class="container-md">
+              <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="#portfolio">PORTFOLIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#about">ABOUT</a>
+                  </li>
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link active " href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
+          </nav>
        
     </header>
 
     <!-- Sezione jumbotron -->
-    <div class="container-fluid  ms-bg-green px-4">
-        <section class="text-center text-white jumbotron container-fluid container-md px-4 ">
-
+    <div class="  ms-bg-green px-4">
+        <section class="text-center text-white jumbotron container-md px-4 ">
+<!-- provere a fare un contenitore a un immagine -->
             <!-- Titolo jumbotron -->
             <img src="img/avatar.svg" class="mw-100" alt="">
             <h2 class="fw-bolder display-2 mt-5">
@@ -56,7 +49,7 @@
             </h2>
 
             <!-- Parte con stella tra due righe -->
-            <div class="row d-flex align-items-center gx-2">
+            <div class="row d-flex align-items-center gx-2 text-center">
                 <div class="col-5 col-md-5 ms-line"></div>
                 
                 <div class="col-2 col-md-2 ">
@@ -84,7 +77,7 @@
     <main>
         <!-- Parte del portfolio -->
 
-        <div id="portfolio" class="container container-md container-lg text-center ">
+        <section id="portfolio" class="container container-md container-lg text-center ">
 
             <!-- Titolo della sezione -->
             <h2 class="text-center mt-5">PORTFOLIO</h2>
@@ -108,68 +101,71 @@
             <!-- Immagini portfolio -->
 
             <!-- Riga superiore -->
-            <div class="row row-cols-3 mb-5 ">
+            <div class="row row-cols-3 mb-5 g-4 ">
 
                 <!-- Riga superiore -->
-                <div class="col-12 col-md-6 col-xl-4 my-3">
-                    <img src="img/cabin.png" class="img-fluid rounded" alt="">
+                <div class="col-12 col-sm-6 col-xl-4 p-relative">
+                    <div class="overlay">
+                        <img src="img/cabin.png" class="img-fluid rounded" alt="">
+
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4 my-3">
+                <div class="col-12 col-sm-6 col-xl-4">
                     <img src="img/cake.png" class="img-fluid rounded" alt="">
                 </div>
-                <div class="col-12 col-md-6 col-xl-4 my-3">
+                <div class="col-12 col-sm-6 col-xl-4">
                     <img src="img/circus.png" class="img-fluid rounded" alt="">
                 </div>   
 
                 
                 <!-- Riga inferiore -->               
-                <div class="col-12 col-md-6 col-xl-4 my-3 ">
+                <div class="col-12 col-sm-6 col-xl-4">
                     <img src="img/game.png" class="img-fluid rounded" alt="">
                 </div>
-                <div class="col-12 col-md-6 col-xl-4 my-3">
+                <div class="col-12 col-sm-6 col-xl-4">
                     <img src="img/safe.png" class="img-fluid rounded" alt="">
                 </div>
-                <div class="col-12 col-md-6 col-xl-4 my-3">
+                <div class="col-12 col-sm-6 col-xl-4">
                     <img src="img/submarine.png" class="img-fluid rounded" alt="">
                 </div>
                 
             </div>
             
-        </div>
+        </section>
 
         <!-- Sezione about -->
 
-        <div id="about" class="container-fluid  ms-bg-green pb-5">
+        <div id="about" class="  ms-bg-green pb-5">
 
-            <section class="text-center text-white container-md container-lg">
+            <section class="text-center text-white container-fluid">
 
                 <!-- Titolo della sezione -->
                 <h2 class="pt-5">ABOUT</h2>
 
                 <!-- Parte con stella tra due righe -->
-            <div class="row d-flex align-items-center gx-4">
-                <div class="col-5 col-md-5 ms-line"></div>
-                
-                <div class="col-2 col-md-2 ">
+                <div class="row d-flex align-items-center gx-4">
+                    <div class="col-5 col-md-5 ms-line"></div>
+                    
+                    <div class="col-2 col-md-2 ">
 
-                    <i class="bi bi-star-fill fs-1"></i>
+                        <i class="bi bi-star-fill fs-1"></i>
 
+                    </div>
+
+                    <div class="col-5 col-md-5 ms-line "></div>
                 </div>
 
-                <div class="col-5 col-md-5 ms-line "></div>
-            </div>
-
-            <!-- paragrafo descrittivo -->
-            <div class="row text-start">
-                <div class="col-12 col-md-6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eaque minus dolore quaerat beatae necessitatibus porro temporibus commodi atque quisquam, facilis molestias et distinctio ex obcaecati vitae, quam itaque delectus!</p>
+                <!-- paragrafo descrittivo -->
+                <div class="row text-start">
+                    <div class="col-12 col-md-6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eaque minus dolore quaerat beatae necessitatibus porro temporibus commodi atque quisquam, facilis molestias et distinctio ex obcaecati vitae, quam itaque delectus!</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum id porro soluta facilis voluptate voluptatum explicabo, reiciendis assumenda, officiis saepe earum autem dolorum recusandae ullam molestiae! Corporis illo ratione id.</p>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum id porro soluta facilis voluptate voluptatum explicabo, reiciendis assumenda, officiis saepe earum autem dolorum recusandae ullam molestiae! Corporis illo ratione id.</p>
-                </div>
-            </div>
 
-            <button type="button" class="btn btn-primary text-white border border-white ms-bg-green"><i class="fas fa-download"></i> Download</button>
+                <button type="button" class="btn btn-success text-white border border-white ms-bg-green"><i class="fas fa-download"></i> Download</button>
 
             </section>
 
@@ -177,7 +173,7 @@
 
 
         <!-- Sezione contattaci -->
-        <section  id="contact" class="text-center container-md container-lg mt-5">
+        <section  id="contact" class="text-center container mt-5">
             <!-- Titolo della sezione -->
             <h2>CONTACT ME</h2>
 
@@ -199,36 +195,29 @@
             <section class="registration text-start">
 
                 <!-- Form inserisci il tuo nome -->
-                <label for="formFile" class="form-label fw-bold mb-0">Name</label>
-
                 <div class="input-group  mb-3">
 
-                    <input type="text" class="form-control form-control-sm border-top-0 border-end-0 border-start-0" aria-label="Username">  
+                    <input type="text" placeholder="Name" class="form-control form-control-sm border-top-0 border-end-0 border-start-0 fw-bold" aria-label="Username">  
                     
                 </div>
 
                 <!-- Form inserisci email -->
-                <label for="formFile" class="form-label fw-bold mb-0">Email Address</label>
-
                 <div class="mb-3">
                     
-                    <input type="email" class="form-control form-control-sm border-top-0 border-end-0 border-start-0" id="exampleFormControlInput1">
+                    <input type="email" placeholder="Email Address" class="form-control form-control-sm border-top-0 border-end-0 border-start-0 fw-bold" id="exampleFormControlInput1">
 
                 </div>
 
                 <!-- Form inserisci il tuo numero di telefono -->
-                
-                <label for="formFile" class="form-label fw-bold mb-0">Phone Number</label>
                 <div class="input-group  mb-3">
 
-                    <input type="text" class="form-control form-control-sm border-top-0 border-end-0 border-start-0" aria-label="Username">
+                    <input type="text" placeholder="Phone Number" class="form-control form-control-sm border-top-0 border-end-0 border-start-0 fw-bold" aria-label="Username">
                 
                 </div>
 
                 <!-- Inserisci testo libero -->
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label fw-bold">Example textarea</label>
-                    <textarea class="form-control border-top-0 border-end-0 border-start-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea placeholder="Message" class="form-control border-top-0 border-end-0 border-start-0 fw-bold" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
 
                 <button type="button" class="btn btn-success">Send</button>
@@ -239,7 +228,7 @@
     </main>
 
     <!-- Inizio del footer -->
-    <footer class="pt-5 mt-5">
+    <footer class="pt-5 mt-5 ms-bg-black">
         <div class="container-fluid d-flex justify-content-around align-items-center text-center text-white">
 
             <div class="row">
@@ -256,7 +245,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <p>ABOUT FREELANCER</p>
-                    <p>Freelancer is a free to use, open source Bootstrap theme created by <span>Start Bootstrap</span> </p>
+                    <p>Freelancer is a free to use, open source Bootstrap theme created by <span><a href="#" class="link-success">Start Bootstrap</a></span> </p>
                 </div>
             </div>
         </div>
