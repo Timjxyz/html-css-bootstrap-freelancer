@@ -29,10 +29,10 @@
 .navbar-dark .navbar-nav .nav-link.active:hover{
     color: #1abc9c;
 }
+
+
 .overlay:hover{
-    filter: grayscale(100%) sepia(100%) hue-rotate(90deg);
-          
-    
+    filter: grayscale(100%) sepia(100%) hue-rotate(90deg);   
 }
 
 .overlay:hover .press-add{
@@ -61,6 +61,11 @@
 .jumbotron{
     margin-top: 56px;
 }
+.box-img{
+    width: 180px;
+    margin: auto;
+} 
+
 
 
 /* Regole sezione portfolio */
